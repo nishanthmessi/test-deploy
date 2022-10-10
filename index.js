@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
     res.send('Home');
 })
 
-app.listen(process.env.PORT, async () => {
+app.listen(process.env.PORT || 5000, async () => {
     console.log(`Server started on Port ${process.env.PORT} !!`);
 
     try {
